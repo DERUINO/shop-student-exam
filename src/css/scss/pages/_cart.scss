@@ -1,0 +1,134 @@
+.cartblock {
+    border: 1px solid #BABAC7;
+    padding: 30px;
+
+    .modal-container {
+        display: none;
+        position: fixed;
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 10;
+        
+        .modalblock {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+
+            .title {
+                font-size: 24px;
+            }
+
+            .answerblock {
+                margin-top: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                .yes {
+                    background: green;
+                    padding: 5px 10px;
+                    color: white;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    min-width: 150px;
+                    text-align: center;
+
+                    &:hover {
+                        background: lawngreen;
+                    }
+                }
+
+                .no {
+                    background: gray;
+                    padding: 5px 10px;
+                    color: white;
+                    border-radius: 10px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: darkgrey;
+                    }
+                }
+            }
+        }
+    }
+
+    .titleblock {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 24px;
+        }
+
+        .buyblock {
+            button {
+                border: none;
+                padding: 5px 10px;
+                background: gray;
+                border-radius: 10px;
+                outline: none;
+                color: white;
+
+                &:hover {
+                    background: rgba(0,0,0,0.3);
+                }
+            }
+        }
+    }
+
+    .cartlist {
+        margin-top: 15px;
+        table {
+            th {
+                background: rgba(0,0,0,0.1);
+                font-size: 20px;
+                padding: 5px;
+                border: 1px solid gray;
+            }
+
+            td {
+                padding: 5px;
+                font-family: $fontSemibold;
+                border: 1px solid gray;
+            }
+
+            .td_checkbox {
+                text-align: center;
+            }
+
+            input[type="checkbox"] {
+                margin-top: 5px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .deleteCart {
+            display: flex;
+            justify-content: flex-end;
+
+            .button {
+                margin-top: 15px;
+                font-size: 12px;
+                padding: 10px;
+                border-radius: 10px;
+                background: darkred;
+                color: white;
+                cursor: pointer;
+                width: 200px;
+                text-align: center;
+
+                &:hover {
+                    background: darksalmon;
+                }
+            }
+        }
+    }
+}

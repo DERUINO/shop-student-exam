@@ -1,0 +1,48 @@
+//misc
+@import 'misc/fonts';
+@import 'misc/colors';
+
+//layout
+@import 'layout/header';
+@import 'layout/content';
+@import 'layout/footer';
+
+//components
+@import 'components/slider';
+@import 'components/authblock';
+
+//pages
+@import 'pages/main';
+@import 'pages/categories';
+@import 'pages/cart';
+@import 'pages/policy';
+
+//admin
+@import 'admin/admin';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.mycol {
+    padding: 0 !important;
+}
+
+.myrow {
+    margin: 0 !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.wrapper {
+    font-family: $fontExtrabold;
+    color: $text;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}

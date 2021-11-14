@@ -1,0 +1,133 @@
+.header {
+    width: 100%;
+
+    .header-navigationblock {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px;
+        width: 92%;
+
+        .header-authblock {
+            font-size: 30px;
+            cursor: pointer;
+
+            &:hover {
+                color: gray;
+            }
+        }
+
+        .welcomeblock {
+            .welcome-text {
+                font-size: 30px;
+                text-align: right;
+                line-height: 0.6;
+                margin-top: 30px;
+            }
+
+            .welcome-links {
+                margin-top: 5px;
+                display: flex;
+                justify-content: space-between;
+
+                .logout {
+                    color: blue;
+                    font-size: 14px;
+                }
+
+                .admin {
+                    font-size: 14px;
+                    color: darkred;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .header-menublock {
+        width: 100%;
+        display: flex;
+        height: 90px;
+        border: 1px solid #BABAC7;
+
+        .menu-link {
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            border-right: 1px solid #BABAC7;
+            background: #F2F2F2;
+            cursor: pointer;
+            position: relative;
+
+            a {
+                width: 100%;
+                display: inline-block;
+                padding: 25px 10px;
+            }
+
+            &:hover {
+                background: #D3D3D3;
+            }
+
+            &:last-child {
+                border-right: none;
+            }
+
+            .dropdown-links {
+                display: none;
+                position: absolute;
+                top: 88px;
+                left: 0;
+                width: 100%;
+                z-index: 10;
+
+                a {
+                    padding: 0;
+                }
+
+                .menu-link {
+                    padding: 25px 10px;
+                    border: none;
+                    border-left: 1px solid #BABAC7;
+                    border-right: 1px solid #BABAC7;
+                    border-bottom: 1px solid #BABAC7;
+                }
+            }
+
+            &:hover {
+                .dropdown-links {
+                    display: block;
+                }
+            }
+        }
+
+        .menu-link.dropdown {
+            padding: 25px 10px; 
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header-navigationblock {
+        flex-direction: column !important;
+        width: 100% !important;
+
+        .header-authblock {
+            margin-top: 30px;
+        }
+    }
+
+    .header-menublock {
+        flex-direction: column !important;
+        height: 100% !important;
+
+        .menu-link {
+            border-right: none !important;
+            border-bottom: 1px solid #BABAC7;
+
+            &:last-child {
+                border-bottom: none !important;
+            }
+        }
+    }
+}

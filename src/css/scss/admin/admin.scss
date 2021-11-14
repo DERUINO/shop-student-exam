@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.admin-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #e3e3e3;
+
+    .sidebar {
+        position: relative;
+        width: 20%;
+        background: #3e3e3e;
+        color: white;
+        min-width: 200px;
+
+        .sidebar-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bolder;
+            padding: 20px 10px;
+            background: rgba(255,255,255,0.2);
+        }
+
+        .back-link {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bolder;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+
+        .sidebar-links {
+            margin-top: 50px;
+            padding: 10px 20px;
+            padding-left: 20%;
+
+            .link {
+                font-size: 22px;
+                margin-bottom: 5px;
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #e3e3e3;
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        width: 80%;
+        padding: 5%;
+        overflow: auto;
+
+        .title {
+            font-size: 26px;
+            font-weight: bolder;
+            margin-bottom: 5%;
+        }
+
+        .categories {
+
+            .categories-container {
+                max-width: 700px;
+
+                .categoriesblock {
+
+                    table {
+                        width: 100%;
+                        text-align: center;
+                      
+                        th,td {
+                            padding: 10px;
+                            border: 1px solid gray;
+
+                            input,button {
+                                padding: 5px 10px;
+                                outline: none;
+                            }
+                        }
+
+                        select {
+                            padding: 5px 10px;
+                            outline: none;
+                        }
+                    }
+                }
+
+                .addblock {
+                    width: 100%;
+                    margin-top: 10px;
+                    display: flex;
+
+                    form {
+                        width: 100%;
+                        display: flex;
+
+                        input {
+                            outline: none;
+                            width: 100%;
+                            padding: 10px;
+                            margin-left: 10px;
+
+                            &:first-child {
+                                margin-left: 0;
+                            }
+                        }
+
+                        button {
+                            padding: 10px;
+                            cursor: pointer;
+                            margin-left: 10px;
+                            outline: none;
+                        }
+
+                        select {
+                            margin-left: 10px;
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .goods {
+            width: 100%;
+
+            .categories-container {
+                max-width: 100%;
+                width: 100%;
+
+                label {
+                    background: white;
+                    border: 1px solid gray;
+                    margin-left: 10px;
+                    padding: 0 5px;
+                    text-align: center;
+                    font-size: 14px;
+                    padding-top: 3px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: #e3e3e3;
+                    }
+                }
+            }
+        }
+
+        .users {
+
+            .categories-container {
+                max-width: 100% !important;
+            }
+
+            .usersblock {
+                display: flex;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 24px;
+                }
+                .user-link {
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                    width: 200px;
+                    padding: 5px;
+                    background: #3e3e3e;
+                    text-align: center;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: rgba(0,0,0,0.5);
+                    }
+                }
+            }
+
+            .ordersblock {
+                .title {
+                    margin-top: 40px;
+                    font-size: 20px;
+                    text-decoration: underline;
+                    margin-bottom: 20px;
+                }
+
+                table {
+                    width: 100%;
+                    text-align: center;
+                    
+                    th,td {
+                        padding: 10px;
+                        border: 1px solid gray;
+
+                        input,button {
+                            padding: 5px 10px;
+                            outline: none;
+                        }
+                    }
+
+                    select {
+                        padding: 5px 10px;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.sliderblock {
+    max-height: 520px;
+
+    .carousel {
+        max-height: 520px;
+
+        .carousel-inner {
+           max-height: 520px; 
+
+           .carousel-item {
+               max-height: 520px;
+
+               img {
+                   max-height: 100%;
+               }
+           }
+        }
+    }
+}
+
+.carousel-indicators {
+    z-index: 9;
+}

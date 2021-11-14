@@ -1,0 +1,28 @@
+$fontLight: ProximaNovaLight;
+$fontThin: ProximaNovaThin;
+$fontSemibold: ProximaNovaSemiBold;
+$fontExtrabold: ProximaNovaExtraBold;
+
+@font-face {
+	font-family: ProximaNovaThin;
+	src: url(fonts/ProximaNovaThin.ttf);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: ProximaNovaLight;
+	src: url(fonts/ProximaNovaLight.ttf);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: ProximaNovaSemiBold;
+	src: url(fonts/ProximaNovaSemiBold.ttf);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: ProximaNovaExtraBold;
+	src: url(fonts/ProximaNovaExtraBold.ttf);
+	font-display: swap;
+}

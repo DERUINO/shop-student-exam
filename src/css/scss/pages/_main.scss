@@ -1,0 +1,41 @@
+.goodscontainer {
+    margin-top: 150px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    
+    .goodsblock {
+        border: 1px solid #BABAC7;
+        background: #BABAC7;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: calc(1rem + 2vh);
+            text-align: center;
+            text-shadow: 0 0 2px rgba(0,0,0,0.5);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .goodscontainer {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .goodscontainer {
+        grid-template-columns: repeat(1, 1fr);  
+    }
+}
